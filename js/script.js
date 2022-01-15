@@ -1,24 +1,13 @@
-/*jshint globalstrict: true*/
 "use strict";
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?',[]);
-console.log(numberOfFilms);
+let incr = 10,
+    decr = 10;
 
-let personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+// ++incr;
+// --decr;
 
-let a = prompt('Один из последних просмотренных фильмов?',[]),
-    b = prompt('На сколько оцените его?',[]),
-    c = prompt('Один из последних просмотренных фильмов?',[]),
-    d = prompt('На сколько оцените его?',[]);
+console.log(incr++);
+console.log(decr--);
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
-
-console.log(personalMovieDB);
-
+console.log(incr);
+console.log(decr);
